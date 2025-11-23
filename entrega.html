@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>✨ Caroline González ✨ - Conteúdo Liberado</title>
+  <style>
+    body{margin:0;font-family:Segoe UI,system-ui,Arial;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;background:#fff;color:#222;height:100vh;text-align:center}
+    img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:1rem;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    h1{margin:.2rem 0;font-size:1.5rem}
+    p{font-size:1rem;color:#666;max-width:360px}
+    .linkbox{margin-top:1rem}
+    a.button{display:inline-block;background:#0066ff;color:#fff;padding:.65rem 1rem;border-radius:8px;text-decoration:none;margin:.3rem 0}
+    .muted{color:#999;font-size:.9rem;margin-top:.6rem}
+  </style>
+</head>
+<body>
+  <img src="https://s3-cf.zapsafe.work/eamontes/01.png" alt="Foto de Caroline González">
+  <h1>😈 Caroline González 💦</h1>
+  <p>Liberando agora os meus conteúdos pra você. Clique no botão abaixo para abrir a pasta com as fotos e vídeos.</p>
+
+  <div class="linkbox">
+    <!-- substitua o href abaixo pelo link definitivo -->
+    <a id="openLink" class="button" href="https://drive.google.com/drive/folders/1N6lrcybPRzvYoLDfybvhissIQKyiuJnf" target="_blank" rel="noopener">Abrir pasta de entrega</a>
+    <div class="muted">Se o link não abrir, use a opção "Abrir em nova guia" ou contacte o suporte.</div>
+  </div>
+
+  <p class="muted" id="status">Se nada acontecer ao clicar, copie e cole este link no navegador:</p>
+  <p><small id="rawLink">https://drive.google.com/drive/folders/1N6lrcybPRzvYoLDfybvhissIQKyiuJnf</small></p>
+
+  <script>
+    // Mostra contador para o usuário (opcional)
+    (function(){
+      const btn = document.getElementById('openLink');
+      const raw = document.getElementById('rawLink');
+      // Se quiser atualizar o link dinamicamente, edite raw.textContent e btn.href aqui.
+      // Exemplo: btn.href = 'https://drive.google.com/drive/folders/1N6lrcybPRzvYoLDfybvhissIQKyiuJnf';
+      // Também adicionamos um handler para detectar se o usuário abriu algo:
+      btn.addEventListener('click', () => {
+        // Abre em nova aba (já feito pelo target="_blank"); aqui apenas mudamos status
+        document.getElementById('status').textContent = 'Link aberto em nova aba. Se não abriu, permita pop-ups ou copie o link manualmente.';
+      });
+    })();
+  </script>
+</body>
+</html>
